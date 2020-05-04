@@ -55,9 +55,9 @@ player_score.set("Player\n0")
 computer_score.set("Computer\n0")
 
 reset_button = tkinter.Button(window, text="Reset", font="bold", command=reset)
-button_rock = tkinter.Button(button_frame, image=ROCK, command=lambda: button_clicked("Rock"))
-button_paper = tkinter.Button(button_frame, image=PAPER, command=lambda: button_clicked("Paper"))
-button_scissors = tkinter.Button(button_frame, image=SCISSORS, command=lambda: button_clicked("Scissors"))
+button_rock = tkinter.Button(button_frame, image=ROCK, command=lambda: button_clicked("Rock"), bg="dodger blue")
+button_paper = tkinter.Button(button_frame, image=PAPER, command=lambda: button_clicked("Paper"), bg="lime green")
+button_scissors = tkinter.Button(button_frame, image=SCISSORS, command=lambda: button_clicked("Scissors"), bg="orange red")
 
 player = tkinter.Label(player_frame, textvariable=player_score)
 empty_space = tkinter.Label(player_frame)
